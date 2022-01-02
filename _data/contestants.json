@@ -1,0 +1,17 @@
+[
+  {
+    "contestantCode": "001",
+    "voteCount": "100",
+    "contestantImage": "https://"
+  },
+  {
+    "contestantCode": "002",
+    "voteCount": "200",
+    "contestantImage": "https://"
+  },
+  {
+    "contestantCode": "003",
+    "voteCount": "300",
+    "contestantImage": "https://"
+  }
+]
