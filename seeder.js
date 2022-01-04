@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config/config.env' });
 
 // Load models
-// const Transaction = require('./models/Transaction');
+const Vote = require('./models/Vote');
 const Contestant = require('./models/Contestant');
 
 // Connect to DB
@@ -17,9 +17,9 @@ mongoose.connect(process.env.MONGO_URL, {
 });
 
 // Read JSON files
-// const transactions = JSON.parse(
-//   fs.readFileSync(`${__dirname}/_data/transactions.json`, 'utf-8')
-// );
+const votes = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data/votes.json`, 'utf-8')
+);
 
 const contestants = JSON.parse(
   fs.readFileSync(`${__dirname}/_data/contestants.json`, 'utf-8')
@@ -28,7 +28,7 @@ const contestants = JSON.parse(
 // Import into DB
 const importData = async () => {
   try {
-    // await Transaction.create(transactions);
+    await Vote.create(votes);
     await Contestant.create(contestants);
     console.log('Data Imported...'.green.inverse);
     process.exit();
@@ -40,7 +40,7 @@ const importData = async () => {
 // Delete data
 const deleteData = async () => {
   try {
-    // await Transaction.deleteMany();
+    await Vote.deleteMany();
     await Contestant.deleteMany();
     console.log('Data Destroyed...'.red.inverse);
     process.exit();

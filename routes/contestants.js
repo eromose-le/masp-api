@@ -11,14 +11,14 @@ const Contestant = require('../models/Contestant');
 const advancedResults = require('../middleware/advancedResults');
 
 // Include other resource routers
-// const transactionRouter = require('./transactions');
+const voteRouter = require('./votes');
 
 const router = express.Router();
 
 const { protect, authorize } = require('../middleware/auth');
 
 // Re-route into other resource routers
-// router.use('/:coinId/transactions', transactionRouter);
+router.use('/:contestantId/votes', voteRouter);
 
 router
   .route('/')
@@ -27,8 +27,8 @@ router
 
 router
   .route('/:id')
-  .get(getContestant)
-  .put(protect, authorize('admin'), updateContestant)
+  .get(advancedResults(Contestant), getContestant)
+  .put(updateContestant)
   .delete(protect, authorize('admin'), deleteContestant);
 
 module.exports = router;

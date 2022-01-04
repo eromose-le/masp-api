@@ -4,25 +4,6 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const UserSchema = new mongoose.Schema({
-  fullName: {
-    type: String
-  },
-  username: {
-    type: String,
-    unique: true
-  },
-  address: {
-    type: String
-  },
-  occupation: {
-    type: String
-  },
-  nationality: {
-    type: String
-  },
-  state: {
-    type: String
-  },
   email: {
     type: String,
     required: [true, 'Please add an email'],
@@ -42,12 +23,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     enum: ['user', 'admin'],
     default: 'user'
-  },
-  dob: {
-    type: String
-  },
-  phoneNumber: {
-    type: String
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,

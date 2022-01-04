@@ -1,17 +1,28 @@
 [
   {
-    "contestantCode": "001",
-    "voteCount": "100",
-    "contestantImage": "https://"
+    "fullName": "developer",
+    "email": "developer@gmail.com",
+    "phoneNumber": "123456",
+    "address": "Nigeria",
+    "occupation": "0912345678902",
+    "nationality": "Nigerian",
+    "stateOfOrigin": "Edo",
+    "dob": "19-05-2021",
+    "username": "bazzcode",
+    "contestantPhoto": "https://",
+    "contestantNo": "001"
   },
   {
-    "contestantCode": "002",
-    "voteCount": "200",
-    "contestantImage": "https://"
-  },
-  {
-    "contestantCode": "003",
-    "voteCount": "300",
-    "contestantImage": "https://"
+    "fullName": "admin",
+    "email": "admin@gmail.com",
+    "phoneNumber": "123456",
+    "address": "New York City, Texas",
+    "occupation": "0912345678902",
+    "nationality": "United Kingdom",
+    "stateOfOrigin": "USA",
+    "dob": "19-05-2021",
+    "username": "admin",
+    "contestantPhoto": "https://",
+    "contestantNo": "002"
   }
 ]

@@ -31,6 +31,7 @@ connectDB();
 
 // Route files
 const contestants = require('./routes/contestants');
+const votes = require('./routes/votes');
 const users = require('./routes/users');
 const auth = require('./routes/auth');
 
@@ -74,6 +75,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount routes
+app.use('/api/v1/votes', votes);
 app.use('/api/v1/contestants', contestants);
 app.use('/api/v1/users', users);
 app.use('/api/v1/auth', auth);

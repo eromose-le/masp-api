@@ -1,0 +1,14 @@
+// TODO - CONTESTANT 
+
+- CONTESTANT 
+    user {
+      email,
+      country,
+      state,
+      dateOfBirth
+    }
+
+one To one relationship to User
+
+* i.e, one Contestant can't open more than one User account.
+* 

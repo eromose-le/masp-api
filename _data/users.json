@@ -1,24 +1,10 @@
 [
   {
-    "fullName": "developer",
     "email": "developer@gmail.com",
-    "phoneNumber": "123456",
-    "address": "Nigeria",
-    "occupation": "0912345678902",
-    "nationality": "Nigerian",
-    "state": "Edo",
-    "dob": "19-05-2021",
-    "username": "bazzcode"
+    "password": "bazzcode"
   },
   {
-    "fullName": "admin",
     "email": "admin@gmail.com",
-    "phoneNumber": "123456",
-    "address": "New York City, Texas",
-    "occupation": "0912345678902",
-    "nationality": "United Kingdom",
-    "state": "USA",
-    "dob": "19-05-2021",
-    "username": "admin"
+    "password": "admin"
   }
 ]
