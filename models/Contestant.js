@@ -46,10 +46,11 @@ const ContestantSchema = new mongoose.Schema(
     },
     contestantNo: {
       type: String,
-      default: null
+      default: 0
     },
     voteCount: {
-      type: String
+      type: String,
+      default: 0
     },
     // user: {
     //   type: mongoose.Schema.ObjectId,

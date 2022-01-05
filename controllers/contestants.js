@@ -412,6 +412,8 @@ exports.updateContestant = asyncHandler(async (req, res, next) => {
   // req.body.user = req.user.id;
   let contestant = await Contestant.findById(req.params.id);
 
+  console.log('1st', contestant);
+
   if (!contestant) {
     return next(
       new ErrorResponse(`Contestant not found with id of ${req.params.id}`, 404)
@@ -428,10 +430,14 @@ exports.updateContestant = asyncHandler(async (req, res, next) => {
   //   );
   // }
 
-  contestant = await Contestant.findOneAndUpdate(req.params.id, req.body, {
+  // FIND ONE BY ID AND UPDATE
+  const filter = { _id: req.params.id };
+  contestant = await Contestant.findOneAndUpdate(filter, req.body, {
     new: true,
     runValidators: true
   });
+
+  console.log('2nd', contestant);
 
   res.status(200).json({
     success: true,
