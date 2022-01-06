@@ -236,7 +236,7 @@ exports.createContestant = asyncHandler(async (req, res, next) => {
                 </p>
                 <br />
                 <p style="margin: 0">
-                  Your <b style="color: #f68234">Registration</b> form was successfully submitted for <b style="color: #f68234">Music Art Stage Performance</b> . <br /> <br /> Click the link below to join you fellow contestants. <a style="text-decoration: none; color: #f68234" href="https://chat.whatsapp.com/IyTfDDTnUMR8bi6H3mjTid">
+                  Your <b style="color: #f68234">Registration</b> form was successfully submitted for <b style="color: #f68234">Music Art Stage Performance</b> . <br /> <br /> Click on the link below to join your fellow contestants. <a style="text-decoration: none; color: #f68234" href="https://chat.whatsapp.com/IyTfDDTnUMR8bi6H3mjTid">
                     Join Now
                   </a>
                 </p>
