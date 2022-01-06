@@ -236,7 +236,7 @@ exports.createContestant = asyncHandler(async (req, res, next) => {
                 </p>
                 <br />
                 <p style="margin: 0">
-                  Your <b style="color: #f68234">Registration</b> form was successfully submitted for <b style="color: #f68234">Music Art Stage Performance</b> . <br /> <br /> Click the link below to join you fellow contestants. <a style="text-decoration: none; color: #f68234" href="#">
+                  Your <b style="color: #f68234">Registration</b> form was successfully submitted for <b style="color: #f68234">Music Art Stage Performance</b> . <br /> <br /> Click the link below to join you fellow contestants. <a style="text-decoration: none; color: #f68234" href="https://chat.whatsapp.com/IyTfDDTnUMR8bi6H3mjTid">
                     Join Now
                   </a>
                 </p>
@@ -259,7 +259,8 @@ exports.createContestant = asyncHandler(async (req, res, next) => {
                             style="border-radius: 3px"
                             bgcolor="#f68234"
                           >
-                            <p
+                            <a
+                            href="https://chat.whatsapp.com/IyTfDDTnUMR8bi6H3mjTid"
                               target="_blank"
                               style="
                                 font-size: 18px;
@@ -274,7 +275,7 @@ exports.createContestant = asyncHandler(async (req, res, next) => {
                                 display: inline-block;
                                 cursor: pointer;
                               "
-                              >Join Now</p
+                              >Join Now</a
                             >
                           </td>
                         </tr>
@@ -300,7 +301,7 @@ exports.createContestant = asyncHandler(async (req, res, next) => {
               >
                 <p style="margin: 0">
                   Upon any error, use the alternative link below <br />
-                  <a href="https://whatsapp.com/awscajncjoacajkencbsduvjcbakdcvadcbvuaidjcvakdcbakdjhcvaic vjadk j">https://whatsapp.com/awscajncjoacajkencbsduvjcbakdcvadcbvuaidjcvakdcbakdjhcvaic vjadk j</a>
+                  <a href="https://chat.whatsapp.com/IyTfDDTnUMR8bi6H3mjTid">https://chat.whatsapp.com/IyTfDDTnUMR8bi6H3mjTid</a>
                 </p>
               </td>
             </tr>
